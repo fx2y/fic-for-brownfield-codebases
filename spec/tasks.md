@@ -14,14 +14,14 @@
 
 2. **Repo Skeleton & Tooling (Spec 0.2)**
    - **Tasks**
-     - R1 Scaffold `fic-kit/` tree: `apps/cli`, `agents/worker`, `agents/subagent`, `skills/`, `services/{code-index,log-distill,telemetry}`, `policies/`, `docs/`, `.github/workflows/`.
+     - [x] R1 Scaffold `fic-kit/` tree: `apps/cli`, `agents/worker`, `agents/subagent`, `skills/`, `services/{code-index,log-distill,telemetry}`, `policies/`, `docs/`, `.github/workflows/`.
      - R2 Initialize Claude Agent SDK project under `agents/worker/` with tool registry (FS, shell, git, tests) + `fic run <task>` entry wired through `apps/cli/`.
      - R3 Stub `agents/subagent/` (JSON-only contracts) + `skills/` (Research→Plan, PR stacking) to align with future phases while remaining no-op placeholders for Day 1 demo.
-     - R4 Add hygiene files: MIT `LICENSE`, `README.md` (install/run), `.editorconfig`, `.pre-commit-config.yaml`, `.gitignore`, `.env.example` (GITHUB_TOKEN), `PULL_REQUEST_TEMPLATE.md`.
+     - [x] R4 Add hygiene files: MIT `LICENSE`, `README.md` (install/run), `.editorconfig`, `.pre-commit-config.yaml`, `.gitignore`, `.env.example` (GITHUB_TOKEN), `PULL_REQUEST_TEMPLATE.md`.
      - R5 Implement `fic doctor` (checks SDK install, token, pre-commit) + `fic demo` (dry-run Research→Plan using sample repo + synthetic `research.md`/`plan.md`).
    - **Checks**
+     - [x] V5 Directory tree matches spec and is free of placeholder TODOs (no empty dirs in git except via `.gitkeep`).
      - V4 `pre-commit run --all-files`, `fic doctor`, `fic demo` all succeed from clean clone on macOS/Linux; capture logs in docs.
-     - V5 Directory tree matches spec and is free of placeholder TODOs (no empty dirs in git except via `.gitkeep`).
      - V6 CLI help text documents every command and references policies.
 
 3. **Automation & Telemetry Pipelines**
